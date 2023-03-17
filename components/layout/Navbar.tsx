@@ -7,7 +7,7 @@ import Profile from "../../src/assets/profile.png";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full bg-white ">
+      <div className="w-full sticky top-0 z-50 bg-white ">
         <div className="w-full px-6 py-6 flex items-center justify-between">
           <Link href={""} className="flex items-center gap-5">
             <LeftArrow />
