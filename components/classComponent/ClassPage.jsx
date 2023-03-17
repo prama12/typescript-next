@@ -8,8 +8,31 @@ import StudentListtile from "../common/studentListtile/StudentListtile";
 import studentData from "../data/studentData";
 import CustomButton from "../common/CustomButton";
 import CustomSearch from "../common/CustomSearch";
+import { useRouter } from "next/router";
 
 const ClassPage = () => {
+  const router = useRouter();
+
+  function handleButtonClick() {
+    router.push(
+      {
+        pathname: "/classes",
+        query: { name: "not-graded" },
+      },
+      undefined,
+      { shallow: true }
+    );
+  }
+  function handleButtonClick1() {
+    router.push(
+      {
+        pathname: "/classes",
+        query: { name: "graded" },
+      },
+      undefined,
+      { shallow: true }
+    );
+  }
   return (
     <>
       <div className="p-6  flex flex-col gap-4">
@@ -70,7 +93,7 @@ const ClassPage = () => {
             amet. Lacus eleifend urna turpis amet mattis lacus. Dui elementum ac
             vitae quam ullamcorper nunc.
           </div>
-          <div className="text-sm tracking-[0.03em] gap-20 text-primary-Spanish-Gray rounded-lg shadowN w-fit px-[13px] py-[14px] flex items-center justify-between ">
+          <div className="text-sm cursor-pointer hover:scale-105 animation tracking-[0.03em] gap-20 text-primary-Spanish-Gray rounded-lg shadowN w-fit px-[13px] py-[14px] flex items-center justify-between ">
             <div className="flex gap-4 items-center">
               <div className="relative w-[30px] h-[30px]">
                 <Image src={Pdf} alt="" fill objectFit="contain" />
@@ -89,14 +112,14 @@ const ClassPage = () => {
         <div className="w-full rounded-lg bg-white font-urbanist p-6 flex flex-col gap-4">
           <div className="w-full flex items-center justify-between">
             <div className="flex items-center">
-              <div>
+              <div className="w-fit" onClick={handleButtonClick}>
                 <CustomButton
                   text="Not-Graded"
                   style="bg-primary-blue text-white rounded"
                 />
               </div>
 
-              <div>
+              <div className="w-fit" onClick={handleButtonClick1}>
                 <CustomButton
                   text="Graded"
                   style="bg-white text-primary-jet rounded"
