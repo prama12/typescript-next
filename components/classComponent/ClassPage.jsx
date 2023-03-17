@@ -89,15 +89,19 @@ const ClassPage = () => {
         <div className="w-full rounded-lg bg-white font-urbanist p-6 flex flex-col gap-4">
           <div className="w-full flex items-center justify-between">
             <div className="flex items-center">
-              <CustomButton
-                text="Not-Graded"
-                style="bg-primary-blue text-white rounded"
-              />
+              <div>
+                <CustomButton
+                  text="Not-Graded"
+                  style="bg-primary-blue text-white rounded"
+                />
+              </div>
 
-              <CustomButton
-                text="Graded"
-                style="bg-white text-primary-jet rounded"
-              />
+              <div>
+                <CustomButton
+                  text="Graded"
+                  style="bg-white text-primary-jet rounded"
+                />
+              </div>
             </div>
             <CustomSearch />
           </div>
