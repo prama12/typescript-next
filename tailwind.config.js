@@ -16,8 +16,9 @@ module.exports = {
           red: "#EA526F",
           jet: "#30323D",
           Rhythm: "#7C81A0",
-          "Spanish Gray": "#9A9A9A",
+          "Spanish-Gray": "#9A9A9A",
           green: "#37B76C",
+          "light-blue": "#2BB8D633",
         },
         secondary: {
           "background-gray": "#9A9A9A1A",

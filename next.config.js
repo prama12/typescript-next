@@ -2,51 +2,20 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    outputStandalone: true,
-  },
-  env: {
-    BASE_URL: process.env.BASE_URL,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  generateEtags: false,
+  swcMinify: true,
+
   webpack(config) {
-    config.module.rules.push(
-      {
-        test: /\.svg$/i,
-        type: "asset",
-        resourceQuery: /url/,
-      },
-      {
-        test: /\.svg$/i,
-        issuer: /\.[jt]sx?$/,
-        resourceQuery: { not: [/url/] },
-        use: [{ loader: "@svgr/webpack", options: { icon: true } }],
-      }
-    );
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [{ loader: "@svgr/webpack", options: { icon: true } }],
+    });
     return config;
   },
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: securityHeaders,
-      },
-    ];
+
+  images: {
+    disableStaticImages: false,
+    domains: ["127.0.0.1"],
   },
 };
-
-const securityHeaders = [
-  {
-    key: "Content-Security-Policy",
-    value: "frame-ancestors https://magic.store",
-  },
-  {
-    key: "Cache-Control",
-    value: "no-store",
-  },
-];
 
 module.exports = nextConfig;
