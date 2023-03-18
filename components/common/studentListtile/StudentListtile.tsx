@@ -1,7 +1,16 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
 import CustomButton from "../CustomButton";
 
-const StudentListtile = ({ name, img, date, submission, style }) => {
+type Props = {
+  name: string;
+  img: StaticImageData;
+  date: string;
+  submission: string;
+  style: string;
+};
+
+const StudentListtile = ({ name, img, date, submission, style }: Props) => {
   return (
     <>
       <div className="px-4 py-2 flex items-center justify-between ">

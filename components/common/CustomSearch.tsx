@@ -1,4 +1,5 @@
-import Search from "../../src/assets/icon/search.svg";
+import { Search } from "@/assets/icon";
+
 const CustomSearch = () => {
   return (
     <>

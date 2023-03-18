@@ -1,15 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-// type Props = {
-//   item: {
-//     icon: any;
-//     name: string;
-//     link: string;
-//   }[];
-// };
+type Props = {
+  icon: React.ReactNode;
+  url: string;
+  name: string;
+};
 
-const SideLink = ({ icon, url, name }) => {
+const SideLink = ({ icon, url, name }: Props) => {
   const router = useRouter();
   return (
     <div className="w-full">

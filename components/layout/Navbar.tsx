@@ -1,8 +1,7 @@
-import { Notification } from "@/assets/icon";
+import { LeftArrow, Notification } from "@/assets/icon";
+import { Profile } from "@/assets/images";
 import Image from "next/image";
 import Link from "next/link";
-import LeftArrow from "../../src/assets/icon/left-arrow.svg";
-import Profile from "../../src/assets/profile.png";
 
 const Navbar = () => {
   return (

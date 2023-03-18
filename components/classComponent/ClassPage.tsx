@@ -1,14 +1,11 @@
 import { Download, Icon } from "@/assets/icon";
 import Image from "next/image";
-import Image1 from "../../src/assets/images/Subtract.png";
-import Image2 from "../../src/assets/images/Subtract1.png";
-import Image3 from "../../src/assets/images/Subtract2.png";
-import Pdf from "../../src/assets/images/pdf.png";
 import StudentListtile from "../common/studentListtile/StudentListtile";
 import studentData from "../data/studentData";
 import CustomButton from "../common/CustomButton";
 import CustomSearch from "../common/CustomSearch";
 import { useRouter } from "next/router";
+import { Image1, Image2, Image3, Pdf } from "@/assets/images";
 
 const ClassPage = () => {
   const router = useRouter();
@@ -130,8 +127,17 @@ const ClassPage = () => {
           </div>
           <div className="flex flex-col">
             {studentData.map((data) => {
-              console.log(data);
-              return <StudentListtile key={data.id} {...data} />;
+              // console.log(data);
+              return (
+                <StudentListtile
+                  key={data.id}
+                  name={data.name}
+                  img={data.img}
+                  date={data.date}
+                  submission={data.submission}
+                  style={data.style}
+                />
+              );
             })}
           </div>
         </div>

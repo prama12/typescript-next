@@ -1,14 +1,16 @@
-import Dashboard from "../../src/assets/icon/dashboard.svg";
-import ClassIcon from "../../src/assets/icon/class.svg";
-import Attendance from "../../src/assets/icon/attendance.svg";
-import Report from "../../src/assets/icon/report.svg";
-import Discipline from "../../src/assets/icon/discipline.svg";
-import Doubts from "../../src/assets/icon/doubts.svg";
-import Message from "../../src/assets/icon/messages.svg";
-import Schedule from "../../src/assets/icon/schedule.svg";
-import Notify from "../../src/assets/icon/notify.svg";
-import Setting from "../../src/assets/icon/setting.svg";
-import Logout from "../../src/assets/icon/logout.svg";
+import {
+  Attendance,
+  ClassIcon,
+  Dashboard,
+  Discipline,
+  Doubts,
+  Logout,
+  Message,
+  Notify,
+  Report,
+  Schedule,
+  Setting,
+} from "@/assets/icon";
 
 const data = [
   {

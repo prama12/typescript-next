@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Logo from "../../../src/assets/logo.png";
 import data from "../../data/navlink";
 import SideLink from "../../common/sidenavLink/SideLink";
+import { Logo } from "@/assets/images";
 
 const Sidebar = () => {
   return (
@@ -16,7 +16,14 @@ const Sidebar = () => {
               {
                 /* console.log(data); */
               }
-              return <SideLink key={item.id} {...item} />;
+              return (
+                <SideLink
+                  key={item.id}
+                  name={item.name}
+                  icon={item.icon}
+                  url={item.url}
+                />
+              );
             })}
           </div>
         </div>

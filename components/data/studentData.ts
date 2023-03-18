@@ -1,8 +1,4 @@
-import Savannah from "../../src/assets/images/savannah.png";
-import Savannah1 from "../../src/assets/images/savannah1.png";
-import Savannah2 from "../../src/assets/images/savannah2.png";
-import Savannah3 from "../../src/assets/images/savannah3.png";
-import Savannah4 from "../../src/assets/images/savannah4.png";
+import { Savannah, Savannah1, Savannah2, Savannah3, Savannah4 } from "@/assets/images";
 
 const studentData = [
   {
