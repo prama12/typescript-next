@@ -17,6 +17,7 @@ const studentData = [
     submission: "Late submission",
     style: "text-primary-red",
   },
+  
   {
     id: 3,
     img: Savannah2,
