@@ -1,15 +1,16 @@
 import {
-  Attendance,
-  ClassIcon,
   Dashboard,
   Discipline,
   Doubts,
+  FavChart,
+  Library,
   Logout,
   Message,
   Notify,
   Report,
   Schedule,
   Setting,
+  Video,
 } from "@/assets/icon";
 
 const data = [
@@ -17,19 +18,25 @@ const data = [
     id: 1,
     name: "dashboard",
     icon: <Dashboard />,
-    url: "/dashboard",
+    url: "/",
   },
   {
     id: 2,
-    name: "classes",
-    icon: <ClassIcon />,
-    url: "/classes",
+    name: "library",
+    icon: <Library />,
+    url: "/library",
   },
   {
     id: 3,
-    name: "attendance",
-    icon: <Attendance />,
-    url: "/attendance",
+    name: "test",
+    icon: <FavChart />,
+    url: "/test",
+  },
+  {
+    id: 3,
+    name: "video",
+    icon: <Video />,
+    url: "/video",
   },
   {
     id: 4,

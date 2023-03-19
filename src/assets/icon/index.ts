@@ -18,8 +18,11 @@ import Search from "./search.svg"
 import Setting from "./setting.svg"
 import Schedule from "./schedule.svg"
 import test from "./test.svg"
+import Library from "./book.svg"
+import Video from "./video.svg"
+import FavChart from "./fav-chart.svg"
 
 
-export { Attendance, ClassIcon, Close, Dashboard, Discipline, Doubts, Download, Icon, LeftArrow, RighrArrow, Logout, Message, Notification, Notes, Notify, Report, Search, Setting, Schedule, test }
+export { Attendance, Library , Video, FavChart, ClassIcon, Close, Dashboard, Discipline, Doubts, Download, Icon, LeftArrow, RighrArrow, Logout, Message, Notification, Notes, Notify, Report, Search, Setting, Schedule, test }
 
 
