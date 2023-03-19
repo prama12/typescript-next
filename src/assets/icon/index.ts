@@ -21,8 +21,10 @@ import test from "./test.svg"
 import Library from "./book.svg"
 import Video from "./video.svg"
 import FavChart from "./fav-chart.svg"
+import Edit from "./edit.svg"
+import Trash from "./trash.svg"
 
 
-export { Attendance, Library , Video, FavChart, ClassIcon, Close, Dashboard, Discipline, Doubts, Download, Icon, LeftArrow, RighrArrow, Logout, Message, Notification, Notes, Notify, Report, Search, Setting, Schedule, test }
+export { Attendance, Edit,Library ,Trash, Video, FavChart, ClassIcon, Close, Dashboard, Discipline, Doubts, Download, Icon, LeftArrow, RighrArrow, Logout, Message, Notification, Notes, Notify, Report, Search, Setting, Schedule, test }
 
 

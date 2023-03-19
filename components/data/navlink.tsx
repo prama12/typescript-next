@@ -18,7 +18,7 @@ const data = [
     id: 1,
     name: "dashboard",
     icon: <Dashboard />,
-    url: "/",
+    url: "/dashboard",
   },
   {
     id: 2,

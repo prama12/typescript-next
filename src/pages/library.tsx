@@ -1,7 +1,9 @@
+import Library from "../../components/library/Library";
+
 const library = () => {
   return (
     <>
-      <h1>Library</h1>
+      <Library />
     </>
   );
 };

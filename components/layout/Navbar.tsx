@@ -6,13 +6,12 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full sticky top-0 z-50 bg-white ">
+      <div className="w-full shadow-Modal sticky top-0 z-50 bg-white ">
         <div className="w-full px-6 py-6 flex items-center justify-between">
           <Link href={""} className="flex items-center gap-5">
             <LeftArrow />
             <p className="text-primary-jet font-urbanist font-medium text-sm leading-[18px] tracking-[0.02em]">
-              Assignments <span className="text-primary-blue">/</span> Lorem
-              ipsum dolor sit
+              Library
             </p>
           </Link>
           <div className="flex items-center gap-6">
